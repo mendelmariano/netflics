@@ -18,14 +18,15 @@ class SplashScreenFragment : Fragment() {
     private lateinit var binding: FragmentSplashscreenBinding
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentSplashscreenBinding.inflate(inflater, container, false)
         binding.lifecycleOwner = this
 
         GlobalScope.launch(context = Dispatchers.Main) {
-            delay(4000)
+            delay(2500)
             findNavController().navigate(R.id.action_splashScreenFragment_to_onboardingFragment)
         }
 
