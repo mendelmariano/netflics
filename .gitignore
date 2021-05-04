@@ -11,4 +11,3 @@ local.properties
 gradlew
 gradlew.bat
 /gradle
-app/google-services.json
